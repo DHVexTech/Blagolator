@@ -1,0 +1,11 @@
+package fr.intech.s5.backend.blagolator.backendblagolator.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="Joke")
+public class Joke {
+	@Id
+	@GeneratedValue(strategy=Generation.AUTO)
+}

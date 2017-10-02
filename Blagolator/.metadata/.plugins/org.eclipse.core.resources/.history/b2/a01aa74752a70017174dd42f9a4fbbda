@@ -1,0 +1,6 @@
+package fr.intech.s5.backend.blagolator.backendblagolator.config;
+
+@EnableJpaRepositories("fr.intech.s5.backend.blagolator.backendblagolator.repository")
+public class DatabaseConfig {
+
+}

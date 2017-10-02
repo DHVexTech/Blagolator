@@ -1,0 +1,5 @@
+package fr.intech.s5.backend.blagolator.backendblagolator.repository;
+
+public interface PageableJokeRepository {
+
+}

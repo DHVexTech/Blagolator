@@ -20,10 +20,10 @@ $api_content_array = json_decode($api_content);
 /* On affiche ce que l'on a réussi à obtenir et on s'arrête ici */
 
 $tab = $api_content_array->content;
-//dd($tab[0]);
+//dd($tab);
+$nb = rand(0, (count($tab)-1));
 
-
-$description = str_replace("!!", "<br>", $tab[0]->description);
+$description = str_replace("!!", "<br>", $tab[$nb]->description);
 
 
 require('views/blague.phtml');

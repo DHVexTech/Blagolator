@@ -2,7 +2,7 @@
 
 $category = $_POST["Category"];
 
-$bodytag = str_replace("%body%", "black", "<body text='%body%'>");
+
 /* Afficher une variable et arrête le script pour des raisons de débogage */
 function dd($data) {
     echo "<pre>";
@@ -21,6 +21,9 @@ $api_content_array = json_decode($api_content);
 
 $tab = $api_content_array->content;
 //dd($tab[0]);
+
+
+$description = str_replace("!!", "<br>", $tab[0]->description);
 
 
 require('views/blague.phtml');

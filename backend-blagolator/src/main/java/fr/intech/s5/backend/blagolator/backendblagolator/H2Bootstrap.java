@@ -18,7 +18,7 @@ public class H2Bootstrap implements CommandLineRunner {
 		System.out.println("Bootstrapping data : ");
 		
 		jokeRepository.save(new Joke("Enfant", "Pourquoi j'appelle mon pénis 'Vérité' ? !! Car la vérité sort toujours de la bouche des enfants"));
-		jokeRepository.save(new Joke("Famille", "Quel est le point commun entre une tarte est une chatte ? !! La tarte à ta graand-mère tu peux la bouffer"));
+		jokeRepository.save(new Joke("Famille", "Quel est le point commun entre une tarte et une chatte ? !! La tarte à ta graand-mère tu peux la bouffer"));
 		jokeRepository.save(new Joke("Enfant", "Quelle est la différence entre un surdoué et un pedophile ? !! Y'en a pas, ils ont tous les deux sauté la classe de CP"));
 		jokeRepository.save(new Joke("Enfant", "C'est quoi la différence entre un enfant et du vin ? !! Y en a pas, les meilleurs ont entre 8 et 10 ans, et sont dans ma cave."));
 		jokeRepository.save(new Joke("Autre", "C'est quoi la différence entre une pute et une pizza ? !! La pizza tu peux la commander sans champignon."));

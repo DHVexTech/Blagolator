@@ -9,6 +9,7 @@ import org.springframework.context.support.ConversionServiceFactoryBean;
 import org.springframework.core.convert.ConversionService;
 import org.springframework.core.convert.converter.Converter;
 
+import fr.intech.s5.backend.blagolator.backendblagolator.converter.JokeRequestToJokeConverter;
 import fr.intech.s5.backend.blagolator.backendblagolator.converter.JokeToJokeResponse;
 
 @Configuration
@@ -19,6 +20,7 @@ public class ConversionConfig {
 	{
 		Set<Converter> converters = new HashSet<Converter>();
 		converters.add(new JokeToJokeResponse());
+		converters.add(new JokeRequestToJokeConverter());
 		return converters;
 	}
 	
